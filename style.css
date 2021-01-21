@@ -1,0 +1,50 @@
+.object-to-find {
+  position: absolute;
+  opacity: 0;
+  padding: 10px;
+}
+
+.cursor-enabled:hover {
+  cursor: pointer;
+}
+
+#summary-info {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+#objects-container {
+  position: relative;
+}
+
+#header .right-side {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  text-align: right;
+}
+
+#points {
+  margin-bottom: 1rem;
+}
+
+#new-game-button {
+  height: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#hint-container {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+}
+
+.hint {
+  display: none;
+  cursor: pointer;
+  background-color: white;
+}
