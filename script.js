@@ -63,6 +63,75 @@ class Utah {
   }
 }
 
+/*
+  Medieval layout pieces
+*/
+
+class Skeleton {
+  constructor(topPx, leftPx) {
+    return {
+      filename: "skeleton.png",
+      top: `${topPx}px`,
+      left: `${leftPx}px`,
+      width: "70px",
+      points: 1,
+      whatYouveFound: "a skeleton"
+    };
+  }
+}
+
+class Knight {
+  constructor(topPx, leftPx) {
+    return {
+      filename: "knight.png",
+      top: `${topPx}px`,
+      left: `${leftPx}px`,
+      width: "70px",
+      points: 5,
+      whatYouveFound: "a knight"
+    };
+  }
+}
+
+class Horse {
+  constructor(topPx, leftPx) {
+    return {
+      filename: "horse.png",
+      top: `${topPx}px`,
+      left: `${leftPx}px`,
+      width: "100px",
+      points: 20,
+      whatYouveFound: "a horse"
+    };
+  }
+}
+
+class Crown {
+  constructor(topPx, leftPx) {
+    return {
+      filename: "crown.png",
+      top: `${topPx}px`,
+      left: `${leftPx}px`,
+      width: "80px",
+      points: 100,
+      whatYouveFound: "a crown"
+    };
+  }
+}
+
+class Dragon {
+  constructor(topPx, leftPx) {
+    return {
+      filename: "dragon.png",
+      top: `${topPx}px`,
+      left: `${leftPx}px`,
+      width: "150px",
+      points: 5000,
+      whatYouveFound: "a dragon"
+    };
+  }
+}
+
 const layouts = [
   [
     new Coin(40, 30),
@@ -80,6 +149,26 @@ const layouts = [
     new Goblet(60, 700),
     new TreasureChest(400, 700),
     new Utah(0, 1200),
+  ],
+  [
+    new Skeleton(125, 40),
+    new Skeleton(325, 400),
+    new Skeleton(0, 200),
+    new Skeleton(400, 1000),
+    new Skeleton(500, 1300),
+    new Skeleton(170, 1290),
+    new Skeleton(65, 1150),
+    new Skeleton(225, 900),
+    new Knight(100, 400),
+    new Knight(300, 1125),
+    new Knight(0, 1000),
+    new Knight(50, 900),
+    new Knight(20, 800),
+    new Horse(300, 60),
+    new Horse(325, 700),
+    new Crown(225, 200),
+    new Crown(45, 1300),
+    new Dragon(0, 0),
   ]
 ];
 
